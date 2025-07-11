@@ -39,3 +39,14 @@ Fetching data...
 Program continues...
 (3-second pause)
 Received: User data
+
+
+🧠 Key Difference
+
+| Behavior        | Synchronous               | Asynchronous / Reactive         |
+|---------------- |---------------------------|---------------------------------|
+| Waits for result | Yes                      | No                              |
+| Program flow    | Pauses                    | Continues immediately           |
+| When result appears | After pause           | Whenever it's ready             |
+
+
