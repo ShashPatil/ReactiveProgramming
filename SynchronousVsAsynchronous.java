@@ -10,10 +10,10 @@ public static void main(String[] args) {
     String data = getUserData(); // Program waits here
     System.out.println("Received: " + data);
 }
-output:-
-Fetching data...
-(3-second pause)
-Received: User data
+// output:-
+// Fetching data...
+// (3-second pause)
+// Received: User data
 
 //Asynchronous
 import reactor.core.publisher.Mono;
@@ -34,19 +34,19 @@ public class AsyncExample {
         System.out.println("Program continues...");
     }
 }
-output:-
-Fetching data...
-Program continues...
-(3-second pause)
-Received: User data
+// output:-
+// Fetching data...
+// Program continues...
+// (3-second pause)
+// Received: User data
 
 
-🧠 Key Difference
+// 🧠 Key Difference
 
-| Behavior        | Synchronous               | Asynchronous / Reactive         |
-|---------------- |---------------------------|---------------------------------|
-| Waits for result | Yes                      | No                              |
-| Program flow    | Pauses                    | Continues immediately           |
-| When result appears | After pause           | Whenever it's ready             |
+// | Behavior        | Synchronous               | Asynchronous / Reactive         |
+// |---------------- |---------------------------|---------------------------------|
+// | Waits for result | Yes                      | No                              |
+// | Program flow    | Pauses                    | Continues immediately           |
+// | When result appears | After pause           | Whenever it's ready             |
 
 
