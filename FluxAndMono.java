@@ -43,6 +43,7 @@ public class FluxAndMonoGeneratorService {
                 .filter(s -> s.length() > stringLength);
     }
     //✅ Use flatMap here because splitStringMono(name) returns a Mono, not just a list.
+    //flatmap transforms each element of a stream into zero or more elements of a new stream, and then flattens these resulting streams into a single, combined stream
     public Mono<List<String>> namesMono_flatMap(int stringLength) {
         return Mono.just("alex")
                 .map(String::toUpperCase)
